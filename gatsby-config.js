@@ -10,32 +10,21 @@ module.exports = {
         link: '/',
       },
       {
-        name: 'DJ',
-        link: '#',
-        items: [
-          {
-            name: 'Left Sidebar',
-            link: '/left-sidebar',
-          },
-          {
-            name: 'Right Sidebar',
-            link: '/right-sidebar',
-          },
-          {
-            name: 'No Sidebar',
-            link: '/no-sidebar',
-          }
-        ],
+        name: 'DJ Nevers',
+        link: '/dj-nevers'
+      },
+      {
+        name: 'Poi Artist',
+        link: '/poi'
+      },
+      {
+        name: 'Contact',
+        link: '/contact'
       },
       {
         name: 'Elements',
         link: '/elements',
-      },
-      {
-        name: 'Sign Up',
-        link: '#',
-        cl: 'button primary',
-      },
+      }
     ],
   },
   plugins: [
@@ -49,7 +38,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
+        icon: 'src/assets/images/dj-nevers-white-favicon.png', // This path is relative to the root of the site.
       },
     },
     {

@@ -11,9 +11,9 @@ const Banner = props => (
           Creative, mover, friend
         </p>
       </header>
-      <span className="image">
+      {/* <span className="image">
         <img src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1590876452/personal-site/dj-nevers-acro-campout.jpg'} alt="intro" />
-      </span>
+      </span> */}
     </div>
     <ScrollLink
       to="one"

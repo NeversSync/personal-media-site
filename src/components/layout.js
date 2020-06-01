@@ -15,11 +15,6 @@ const Layout = ({ children, ...props }) => (
             menuLinks {
               name
               link
-              cl
-              items {
-                link
-                name
-              }
             }
           }
         }
