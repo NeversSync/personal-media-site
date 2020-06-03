@@ -5,7 +5,7 @@ import { Link as ScrollLink } from 'react-scroll'
 const Banner = props => (
   <section id="banner">
     <div className="content">
-      <header>
+      <header className="dark-bg">
         <h2>Nicky Evers</h2>
         <p>
           Creative, mover, friend

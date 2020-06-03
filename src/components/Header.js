@@ -26,11 +26,11 @@ class Header extends React.Component {
         // set the class for the mobile menu
         this.state.active
           ? this.setState({
-              mobileActiveClass: 'navPanel-visible',
-            })
+            mobileActiveClass: 'navPanel-visible',
+          })
           : this.setState({
-              mobileActiveClass: '',
-            })
+            mobileActiveClass: '',
+          })
       }
     )
   }
@@ -111,9 +111,21 @@ class Header extends React.Component {
         </div>
 
         <header id="header">
-          <h1 id="logo">
+          <ul className="icons">
+            <li>
+              <a href="/" className="icon brands alt fa-facebook-f">
+                <span className="label">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="/" className="icon brands alt fa-instagram">
+                <span className="label">Instagram</span>
+              </a>
+            </li>
+          </ul>
+          {/* <h1 id="logo">
             <Link to="/">{siteTitle}</Link>
-          </h1>
+          </h1> */}
           <div className="navbar-menu">
             <nav>
               <ul style={{ display: 'flex', flex: 1 }}>
@@ -133,13 +145,13 @@ class Header extends React.Component {
                           style={
                             open
                               ? {
-                                  display: `block`,
-                                  background: `rgba(39, 40, 51, 0.965)`,
-                                  position: `absolute`,
-                                  right: `55%`,
-                                  minWidth: `150px`,
-                                  borderRadius: `5px`,
-                                }
+                                display: `block`,
+                                background: `rgba(39, 40, 51, 0.965)`,
+                                position: `absolute`,
+                                right: `55%`,
+                                minWidth: `150px`,
+                                borderRadius: `5px`,
+                              }
                               : { display: `none` }
                           }
                           onMouseEnter={this.enterMenu}
@@ -170,14 +182,14 @@ class Header extends React.Component {
                                     style={
                                       subOpen
                                         ? {
-                                            display: `block`,
-                                            background: `rgba(39, 40, 51, 0.965)`,
-                                            borderRadius: `5px`,
-                                            position: `absolute`,
-                                            right: `100%`,
-                                            width: `100%`,
-                                            marginTop: `-35px`,
-                                          }
+                                          display: `block`,
+                                          background: `rgba(39, 40, 51, 0.965)`,
+                                          borderRadius: `5px`,
+                                          position: `absolute`,
+                                          right: `100%`,
+                                          width: `100%`,
+                                          marginTop: `-35px`,
+                                        }
                                         : { display: `none` }
                                     }
                                     onMouseEnter={this.enterSubMenu}
@@ -205,32 +217,35 @@ class Header extends React.Component {
                                 </li>
                               </React.Fragment>
                             ) : (
-                              <li
-                                key={sublink.name}
-                                style={{
-                                  textAlign: `left`,
-                                  marginLeft: `0`,
-                                  paddingLeft: `0`,
-                                  fontSize: `14px`,
-                                  lineHeight: `2.5`,
-                                  display: `block`,
-                                }}
-                              >
-                                <Link to={sublink.link}>{sublink.name}</Link>
-                              </li>
-                            )
+                                <li
+                                  key={sublink.name}
+                                  style={{
+                                    textAlign: `left`,
+                                    marginLeft: `0`,
+                                    paddingLeft: `0`,
+                                    fontSize: `14px`,
+                                    lineHeight: `2.5`,
+                                    display: `block`,
+                                  }}
+                                >
+                                  <Link to={sublink.link}>{sublink.name}</Link>
+                                </li>
+                              )
                           )}
                         </ul>
                       </li>
                     </React.Fragment>
                   ) : (
-                    <li key={link.name}>
-                      <Link className={link.cl} to={link.link}>
-                        {link.name}
-                      </Link>
-                    </li>
-                  )
+                      <li key={link.name}>
+                        <Link className={link.cl} to={link.link}>
+                          {link.name}
+                        </Link>
+                      </li>
+                    )
                 )}
+                <li>
+                  <a href="https://steadyhandtea.com" target="_blank">Steady Hand Tea</a>
+                </li>
               </ul>
             </nav>
           </div>

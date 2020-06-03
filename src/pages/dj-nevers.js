@@ -30,8 +30,8 @@ const DjNevers = props => (
             <img src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1590876440/personal-site/BCC-dj-nevers-large-center-logo-01.jpg" alt="" />
           </a>
           <h2>DJ Nevers</h2>
+          <p>I've been playing music at Flow-Arts and dance events across North America under the name DJ Nevers for the past 8 years.</p>
           <p>
-            Nicky Evers has been playing music at Flow-Arts and dance events across North America under the name DJ Nevers for the past six years.
             Here you can find his most recent mixes available for listening and download.
             Follow him on facebook and
             soundcloud to stay in touch.

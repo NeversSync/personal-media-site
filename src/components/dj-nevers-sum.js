@@ -3,27 +3,23 @@ import pic03 from '../assets/images/pic03.jpg'
 import { Link as ScrollLink } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
 
-const Two = props => (
+const DJNevers = props => (
   <section
-    id="two"
+    id="two dj-nevers"
     className="spotlight style2 right inactive"
-    style={{ backgroundImage: `url(${pic03})` }}
+    style={{ backgroundImage: `url(https://res.cloudinary.com/nicky-cloudinary/image/upload/v1590876452/personal-site/dj-nevers-acro-campout.jpg)` }}
   >
     <span className="image fit main">
-      <img src={pic03} alt="" />
+      <img src='https://res.cloudinary.com/nicky-cloudinary/image/upload/v1590876452/personal-site/dj-nevers-acro-campout.jpg' alt="" />
     </span>
     <Fade right big>
-      <div className="content">
+      <div className="content dark-bg">
         <header>
-          <h2>Interdum amet non magna accumsan</h2>
-          <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+          <h2>DJ Nevers</h2>
+          <p>I've been playing music at Flow-Arts and dance events across North America under the name DJ Nevers for the past 8 years.</p>
+          <p>
+          Click below to learn more and listen to my most recent recorded sets.</p>
         </header>
-        <p>
-          Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim
-          mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet
-          augue varius tempus lobortis porttitor lorem et accumsan consequat
-          adipiscing lorem.
-        </p>
         <ul className="actions">
           <li>
             <a href="/" className="button">
@@ -47,4 +43,4 @@ const Two = props => (
   </section>
 )
 
-export default Two
+export default DJNevers

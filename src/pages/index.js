@@ -3,9 +3,9 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 import MainBio from '../components/MainBio'
-import Two from '../components/Two'
+import DJNevers from '../components/dj-nevers-sum'
 import Three from '../components/Three'
-import Four from '../components/Four'
+import Tea from '../components/Tea'
 import Contact from '../components/Contact'
 
 class Home extends React.Component {
@@ -22,9 +22,9 @@ class Home extends React.Component {
         ></Helmet>
         <Banner />
         <MainBio />
-        <Two />
+        <DJNevers />
         <Three />
-        <Four />
+        <Tea />
         <Contact />
       </Layout>
     )

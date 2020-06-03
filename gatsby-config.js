@@ -35,7 +35,9 @@ module.exports = {
         name: 'Nicky Evers Personal Site',
         short_name: 'Nicky Evers Media',
         start_url: '/',
-        background_color: '#663399',
+        // background_color: '#663399',
+        background_color: '#eee',
+        // theme_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/assets/images/dj-nevers-white-favicon.png', // This path is relative to the root of the site.

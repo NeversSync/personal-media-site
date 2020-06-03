@@ -13,7 +13,7 @@ const Three = props => (
       <img src={pic04} alt="" />
     </span>
     <Fade left big>
-      <div className="content">
+      <div className="content dark-bg">
         <header>
           <h2>Interdum felis blandit praesent sed augue</h2>
           <p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>

@@ -30,6 +30,7 @@ const MobileMenu = props => (
                       {nestedsublink.name}
                     </Link>
                   </div>
+
                 ))}
               </React.Fragment>
             ) : (
@@ -52,7 +53,11 @@ const MobileMenu = props => (
           </Link>
         </div>
       )
-    )}
+    )
+    }
+    <div>
+        <a href="https://steadyhandtea.com" target="_blank" className="link depth-0">Steady Hand Tea</a>
+    </div>
   </nav>
 )
 

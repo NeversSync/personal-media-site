@@ -30,11 +30,12 @@
 		$size: 1px;
 
 		&:before {
-			color: $bg !important;
-			text-shadow:	$size 0 0 $fg,
-							($size * -1) 0 0 $fg,
-							0 $size 0 $fg,
-							0 ($size * -1) 0 $fg;
+			color: $bg;
+			// text-shadow:	$size 0 0 $fg,
+			// 				($size * -1) 0 0 $fg,
+			// 				0 $size 0 $fg,
+			// 				0 ($size * -1) 0 $fg;
+
 		}
 	}
 
@@ -157,6 +158,13 @@
 		&:hover {
 			color: _palette(accent1) !important;
 			border-bottom-color: transparent;
+		}
+
+		&.icon {
+			color: _palette(fg);
+			&:hover {
+				color: _palette(accent1);
+			}
 		}
 	}
 
@@ -734,9 +742,9 @@
 			}
 		}
 
-		&.alt {
-			@include line-icon;
-		}
+		// &.alt {
+		// 	@include line-icon;
+		// }
 
 		&.major {
 			background: _palette(accent2);
@@ -1662,12 +1670,13 @@
 		text-align: center;
 
 		.icons {
-			.icon {
-				&.alt {
-					@include line-icon(_palette(accent2), _palette(fg-light));
-				}
+
+			.icon:hover {
+				color: _palette(accent1);
+				// @include line-icon(_palette(accent2), _palette(fg-light));
 			}
-		}
+
+			}
 
 		.copyright {
 			color: _palette(fg-light);
@@ -1696,7 +1705,6 @@
 			}
 		}
 	}
-
 /* XLarge */
 
 	@include breakpoint('<=xlarge') {
