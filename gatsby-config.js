@@ -16,14 +16,6 @@ module.exports = {
       {
         name: 'Poi Artist',
         link: '/poi'
-      },
-      {
-        name: 'Contact',
-        link: '/contact'
-      },
-      {
-        name: 'Elements',
-        link: '/elements',
       }
     ],
   },

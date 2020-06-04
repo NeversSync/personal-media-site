@@ -7,17 +7,14 @@ const Banner = props => (
     <div className="content">
       <header className="dark-bg">
         <h2>Nicky Evers</h2>
-        <p>
-          Creative, mover, friend
-        </p>
+        <h3>
+        Creative, mover, friend
+        </h3>
       </header>
-      {/* <span className="image">
-        <img src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1590876452/personal-site/dj-nevers-acro-campout.jpg'} alt="intro" />
-      </span> */}
     </div>
     <ScrollLink
       to="one"
-      className="goto-next"
+      className="goto-next banner-goto"
       activeClass="active"
       smooth={true}
       offset={50}

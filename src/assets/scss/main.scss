@@ -5,7 +5,7 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import url('../css/fontawesome-all.min.css');
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;500&display=swap");
 
 /*
 	Landed by HTML5 UP
@@ -31,11 +31,6 @@
 
 		&:before {
 			color: $bg;
-			// text-shadow:	$size 0 0 $fg,
-			// 				($size * -1) 0 0 $fg,
-			// 				0 $size 0 $fg,
-			// 				0 ($size * -1) 0 $fg;
-
 		}
 	}
 
@@ -607,7 +602,7 @@
 	}
 
 	input[type="checkbox"],
-	input[type="radio"], {
+	input[type="radio"] {
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
@@ -872,7 +867,8 @@
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+		padding-top: 1em;
+		// padding-left: 0;
 
 		li {
 			display: inline-block;
@@ -902,6 +898,7 @@
 		li {
 			padding: 0 0 0 (_size(element-margin) * 0.5);
 			vertical-align: middle;
+			margin: 0 auto;
 		}
 
 		&.special {
@@ -986,82 +983,6 @@
 		}
 	}
 
-/* Table */
-
-	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
-	}
-
-	table {
-		margin: 0 0 _size(element-margin) 0;
-		width: 100%;
-
-		tbody {
-			tr {
-				border: solid 1px _palette(border);
-				border-left: 0;
-				border-right: 0;
-
-				&:nth-child(2n + 1) {
-					background-color: _palette(border-bg);
-				}
-			}
-		}
-
-		td {
-			padding: 0.75em 0.75em;
-		}
-
-		th {
-			color: _palette(fg-dark);
-			font-size: 0.9em;
-			font-weight: _font(weight-bold);
-			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
-		}
-
-		thead {
-			border-bottom: solid 1px _palette(border);
-		}
-
-		tfoot {
-			border-top: solid 1px _palette(border);
-		}
-
-		&.alt {
-			border-collapse: separate;
-
-			tbody {
-				tr {
-					td {
-						border: solid 1px _palette(border);
-						border-left-width: 0;
-						border-top-width: 0;
-
-						&:first-child {
-							border-left-width: 1px;
-						}
-					}
-
-					&:first-child {
-						td {
-							border-top-width: 1px;
-						}
-					}
-				}
-			}
-
-			thead {
-				border-bottom: 0;
-			}
-
-			tfoot {
-				border-top: 0;
-			}
-		}
-	}
-
 /* Button */
 
 	input[type="submit"],
@@ -1113,12 +1034,17 @@
 		}
 
 		&.primary {
-			background-color: _palette(accent1);
-			box-shadow: none;
-			color: _palette(fg-dark) !important;
+			// background-color: _palette(accent1);
+			// background-image: linear-gradient(200deg, _palette(fg-lighter), _palette(accent2));
+			background-image: linear-gradient(200deg, _palette(accent1), _palette(accent2));
+			box-shadow: 0px 5px 15px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+			color: _palette(fg) !important;
+			transition: all 200ms ease;
 
 			&:hover {
 				background-color: lighten(_palette(accent1), 5);
+				box-shadow: 0px 5px 15px rgba(50, 50, 93, 0.3), 0 5px 15px rgba(0, 0, 0, 0.3);
+				transform: translateY(-2px);
 			}
 
 			&:active {
@@ -1140,7 +1066,7 @@
 
 	.goto-next {
 		border: 0;
-		bottom: 0;
+		bottom: 3%;
 		display: block;
 		height: 5em;
 		left: 50%;
@@ -1181,6 +1107,9 @@
 		overflow: hidden;
 		position: relative;
 
+		&#main-bio {
+			height: 100vh;
+		}
 		// Force spotlights to stack in reverse order (needed for our box
 		// shadows to overlap stuff in the right direction).
 		@for $i from 1 through _misc(max-spotlight) {
@@ -1231,6 +1160,12 @@
 			}
 		}
 
+		&.bottom#main-bio {
+			.content {
+				height: 100%;
+			}
+		}
+
 		&.top {
 			.content {
 				border-bottom-width: 0.35em;
@@ -1242,6 +1177,12 @@
 			.content {
 				border-top-width: 0.35em;
 				bottom: 0;
+			}
+		}
+
+		header {
+			p, li {
+				font-size: 1.25em;
 			}
 		}
 
@@ -1341,12 +1282,8 @@
 			}
 		}
 
-
-
-
 		&.style2 {
-			background: _palette(accent1);
-
+			background: _palette(bg-dark);
 			input[type="text"],
 			input[type="password"],
 			input[type="email"],
@@ -1357,33 +1294,31 @@
 				}
 			}
 
+			&.style2.contact {
+				background-image: linear-gradient(200deg, _palette(accent2),_palette(accent3));
+
+				.row {
+					width: 60%;
+					margin: 0 auto;
+				}
+			}
+
 			input[type="submit"],
 			input[type="reset"],
 			input[type="button"],
 			.button {
-				&:hover, &:active {
-					background-color: _palette(border-bg) !important;
-					box-shadow: inset 0 0 0 1px _palette(border2) !important;
-					color: _palette(fg-dark) !important;
-				}
-
-				&:active {
-					background-color: _palette(border2-bg) !important;
-				}
 
 				&.primary {
-					background-color: _palette(fg-dark);
-					color: _palette(accent1) !important;
+					background-image: linear-gradient(200deg, _palette(accent1), _palette(accent2));
+			box-shadow: 0px 5px 15px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+			color: _palette(fg) !important;
+			transition: all 200ms ease;
 
-					&:hover, &:active {
-						background-color: _palette(border-bg) !important;
-						box-shadow: inset 0 0 0 1px _palette(border2) !important;
-						color: _palette(fg-dark) !important;
-					}
-
-					&:active {
-						background-color: _palette(border2-bg) !important;
-					}
+			&:hover, &:active {
+				background-color: lighten(_palette(accent1), 5);
+				box-shadow: 0px 5px 15px rgba(50, 50, 93, 0.3), 0 5px 15px rgba(0, 0, 0, 0.3);
+				transform: translateY(-2px);
+			}
 				}
 			}
 		}
@@ -1495,14 +1430,14 @@
 /* Header */
 
 	#page-wrapper {
-		padding-top: 3.5em;
+		padding-top: 5em;
 	}
 
 	#header {
 		background: _palette(accent2-transparent);
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.25);
 		cursor: default;
-		height: 3.5em;
+		height: 5em;
 		left: 0;
 		line-height: 3.5em;
 		position: fixed;
@@ -1519,6 +1454,10 @@
 			top: 0;
 		}
 
+		p {
+			font-size: 1.25em;
+		}
+
 		nav {
 			position: absolute;
 			right: 1em;
@@ -1526,6 +1465,8 @@
 
 			ul {
 				margin: 0;
+				padding-top: .75em;
+				padding-right: 1em;
 
 				li {
 					display: inline-block;
@@ -1538,6 +1479,8 @@
 						height: inherit;
 						line-height: inherit;
 						outline: 0;
+						text-transform: uppercase;
+						letter-spacing: .75px;
 
 						&.button {
 							height: 2em;
@@ -1580,7 +1523,7 @@
 
 	#banner {
 		background-attachment: fixed;
-		background-color: _palette(accent2);
+		// background-color: _palette(bg-dark);
 		background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/v1590985445/personal-site/foggy-forest-portfolio-landing.jpg');
 		background-position: center center;
 		background-size: cover;
@@ -1595,16 +1538,10 @@
 			display: inline-block;
 			height: 100vh;
 			vertical-align: middle;
-			// position: absolute;
-			// top: 0;
-			// right: 0;
-			// width: 100vw;
-			// background-image: linear-gradient(grey, rgba(0,0,0,0));
 		}
 
 		&:after {
-			// @include vendor('background-image', ('linear-gradient(top, #{_palette(bg-transparent)}, #{_palette(bg-transparent)})', 'url("../css/images/overlay.png");'));
-			background-image: linear-gradient(grey, rgba(0,0,0,0));
+			background-image: linear-gradient(_palette(bg-semi-dark-transparent), _palette(bg-very-transparent));
 			content: '';
 			display: block;
 			height: 100%;
@@ -1630,7 +1567,8 @@
 
 				h2 {
 					font-size: 2.5em;
-					margin: 0;
+					margin: 0 auto;
+					text-align: center;
 				}
 
 				p {
@@ -1665,18 +1603,9 @@
 /* Footer */
 
 	#footer {
-		background: _palette(accent2);
+		background: _palette(fg-dark);
 		padding: $size-wrapper-pad-tb 0;
 		text-align: center;
-
-		.icons {
-
-			.icon:hover {
-				color: _palette(accent1);
-				// @include line-icon(_palette(accent2), _palette(fg-light));
-			}
-
-			}
 
 		.copyright {
 			color: _palette(fg-light);
@@ -1828,6 +1757,8 @@
 						margin-left: 0;
 
 						li {
+							margin: 0 auto;
+
 							&:first-child {
 								padding-left: 0;
 							}
@@ -2026,7 +1957,7 @@
 				box-shadow: 0 0.125em 0.125em 0 rgba(0,0,0,0.125);
 
 				.title {
-					color: _palette(fg-dark);
+					color: _palette(fg);
 					display: block;
 					font-weight: _font(weight-bold);
 					height: 44px;

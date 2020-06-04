@@ -4,34 +4,28 @@ const Footer = props => (
   <footer id="footer">
     <ul className="icons">
       <li>
-        <a href="/" className="icon brands alt fa-facebook-f">
-          <span className="label">Facebook</span>
+        <a href="https://www.facebook.com/djneversmusic/" className="icon brands alt fa-facebook-f" target="_blank">
+          <span className="label">DJ Nevers Facebook</span>
         </a>
       </li>
       <li>
-        <a href="/" className="icon brands alt fa-linkedin-in">
+        <a href="https://www.youtube.com/user/dharmamystic" className="icon brands alt fa-youtube" target="_blank">
+          <span className="label">Youtube</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/nicky-evers/" className="icon brands alt fa-linkedin-in" target="_blank">
           <span className="label">LinkedIn</span>
         </a>
       </li>
       <li>
-        <a href="/" className="icon brands alt fa-instagram">
-          <span className="label">Instagram</span>
-        </a>
-      </li>
-      <li>
-        <a href="/" className="icon brands alt fa-github">
-          <span className="label">GitHub</span>
+        <a href="https://soundcloud.com/djnevers" className="icon brands alt fa-soundcloud" target="_blank">
+          <span className="label">Soundcloud</span>
         </a>
       </li>
     </ul>
     <ul className="copyright">
-      <li>&copy; Untitled. All rights reserved.</li>
-      <li>
-        Design: <a href="http://html5up.net">HTML5 UP</a>
-      </li>
-      <li>
-        Demo Images: <a href="https://unsplash.com">Unsplash</a>
-      </li>
+      <li>&copy; <a href="https://nickyevers.com" target="_blank">Nicky Evers Design</a>. All rights reserved.</li>
     </ul>
   </footer>
 )

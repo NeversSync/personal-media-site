@@ -15,15 +15,17 @@ const Tea = props => (
     <Fade right big>
       <div className="content dark-bg">
         <header>
-          <h2>Steady Hand Tea</h2>
-          <p>Lending a steady hand through tea and tea culture
-            Quality tea content
-            Education, photography, and events
-            Artisan tea sales, retail and wholesale</p>
+          <h2>Artisan Chinese Tea</h2>
+          <p>I founded a tea business named <a href="https://www.steadyhandtea.com/" target="_blank">Steady Hand Tea</a> which provides:</p>
+          <ul>
+            <li>Quality tea content</li>
+            <li>Education, photography, and events</li>
+            <li>Personally sourced Artisan tea sales</li>
+          </ul>
         </header>
         <ul className="actions">
           <li>
-            <a href="https://www.steadyhandtea.com/" target="_blank" className="button">
+            <a href="https://www.steadyhandtea.com/" target="_blank" className="button primary">
               Learn More
             </a>
           </li>

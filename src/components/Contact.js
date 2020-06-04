@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade'
 const Contact = props => (
   <section id="contact" className="wrapper style2 contact special fade inactive">
     <Fade duration={2500}>
-      <div className="container">
+      <div className="container dark-bg">
         <header>
           <h2>Contact</h2>
           <p>Drop me a line and I'll respond as soon as I can</p>
