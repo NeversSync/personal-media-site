@@ -13,7 +13,7 @@ const MainBio = props => (
       <img src='https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591231024/personal-site/nick-west-88439-unsplash.jpg' alt="" />
     </span>
     <Fade bottom big>
-      <div className="content">
+      <div className="content mainbio">
         <div className="container">
           <div className="row">
             <div className="col-4 col-12-medium">

@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import '../assets/scss/main.scss'
+import '../assets/scss/custom.scss'
 import Header from './Header'
 import Footer from './Footer'
 

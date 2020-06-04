@@ -1,8 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-
-import pic07 from '../assets/images/pic07.jpg'
+import djNeversJSON from '../assets/content/dj-nevers.json'
+import { Link } from 'gatsby'
 
 const DjNevers = props => (
   <Layout>
@@ -13,31 +13,79 @@ const DjNevers = props => (
 
     <div id="main" className="wrapper style1 light-bg dj-nevers">
       <div className="container">
-        {/* <header className="major">
-          <h2>DJ Nevers</h2>
-          <p>
-          Nicky Evers has been playing music at Flow-Arts and dance events across North America under the name DJ Nevers for the past six years.
-          Here you can find his most recent mixes available for listening and download.
-          Follow him on facebook and
-          soundcloud to stay in touch.
-          <br/>
-          Contact him if you want him to play at your event.
-          </p>
-        </header> */}
-
         <section id="content">
-          <a href="#" className="image fit">
-            <img src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1590876440/personal-site/BCC-dj-nevers-large-center-logo-01.jpg" alt="" />
+          <a className="image fit">
+            <img src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1590876444/personal-site/Dj_nevers_playing_at_BCC.jpg" alt="" />
           </a>
-          <h2>DJ Nevers</h2>
-          <p>I've been playing music at Flow-Arts and dance events across North America under the name DJ Nevers for the past 8 years.</p>
-          <p>
-            Here you can find his most recent mixes available for listening and download.
-            Follow him on facebook and
-            soundcloud to stay in touch.
-          <br />
-          Contact him if you want him to play at your event.
-          </p>
+
+          <header className="major custom-page-header">
+            <div className="header-title">
+              <ul className="icons">
+                <li>
+                  <a href="https://soundcloud.com/djnevers" className="icon brands alt fa-soundcloud" target="_blank">
+                    <span className="label">Soundcloud</span>
+                  </a>
+                </li>
+              </ul>
+              <h2>DJ Nevers</h2>
+              <ul className="icons">
+                <li>
+                  <a href="https://www.facebook.com/djneversmusic/" className="icon brands alt fa-facebook-f" target="_blank">
+                    <span className="label">DJ Nevers Facebook</span>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <p>I've been playing music at Flow Arts and dance events across North America under the name DJ Nevers for the past 8 years.</p>
+            <p>
+              Here you can find my most recent mixes available for listening and download.
+              Follow me on Facebook and
+              Soundcloud to stay in touch.</p>
+            <p>
+              <Link to="/contact">Contact me</Link> if you are interested in booking me to play at your event.
+            </p>
+          </header>
+            <div className="youtube-container">
+          <div className="youtube-video-wrapper">
+            <iframe
+              className='youtube-iframe'
+              width='560'
+              height='315'
+              src='https://www.youtube.com/embed/TycWtRxtqWE'
+              frameBorder='0'
+              allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+              title='music video'
+            />
+          </div>
+          <div className="youtube-video-wrapper">
+            <iframe
+              className='youtube-iframe'
+              width='560'
+              height='315'
+              src='https://www.youtube.com/embed/HJmq-poJhD8'
+              frameBorder='0'
+              allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+              title='music video'
+            />
+            </div>
+          </div>
+          <div className="soundcloud-wrapper">
+            {
+              djNeversJSON.content.map((data, index) => {
+                console.log(data);
+                return <div className="soundcloud-player" key={`set_num_${index}`}><iframe width="100%"
+                  height="100%"
+                  scrolling="no"
+                  frameBorder="no"
+                  title="soundcloud mix"
+                  src={`${data.set}`} />
+                </div>
+              })
+            }
+          </div>
         </section>
       </div>
     </div>
