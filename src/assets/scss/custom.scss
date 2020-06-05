@@ -1,4 +1,24 @@
 /* Custom scss added on top of starter */
+// BASIC
+.custom-page-section {
+  text-align: left;
+  width: 60%;
+  max-width: 800px;
+  margin: 2em auto;
+
+  &:after {
+    margin: 0 auto;
+  }
+}
+
+.testimonials {
+  h3 {
+    text-align: center;
+  }
+  p {
+  font-style: italic;
+  }
+}
 // DJ NEVERS PAGE
   .soundcloud-wrapper {
     display: grid;
@@ -29,7 +49,11 @@
     margin-bottom: 2em;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
-	  height: 0;
+    height: 0;
+
+    &.no-margin-bottom {
+        margin-bottom: 0px;
+    }
 
     .youtube-iframe {
       border-radius: 5px;
@@ -40,6 +64,7 @@
       height: 100%;
     }
   }
+
 
   // MEDIA QUERIES
 @media screen and (max-width: 980px) {
