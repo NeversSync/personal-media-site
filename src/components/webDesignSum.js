@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
-import Fade from 'react-reveal/Fade'
+import Fade from 'react-reveal/Fade';
 
 const WebDesignSum = props => (
   <section
