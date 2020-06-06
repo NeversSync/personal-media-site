@@ -80,7 +80,6 @@ const DjNevers = props => (
             <Fade bottom cascade>
               {
                 djNeversJSON.content.map((data, index) => {
-                  console.log(data);
                   return <div className="soundcloud-player" key={`set_num_${index}`}><iframe width="100%"
                     height="100%"
                     scrolling="no"
