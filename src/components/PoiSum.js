@@ -6,13 +6,13 @@ import Link from 'gatsby-link';
 const PoiSum = props => (
   <section
     id="poi-sum three"
-    className="spotlight style3 left inactive"
+    className="spotlight style3 left inactive poi-sum"
     style={{ backgroundImage: `url(https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591224983/personal-site/NICKY-EVERS-PERFORMANCE.jpg)` }}
   >
     <span className="image fit main bottom">
       <img src='https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591224983/personal-site/NICKY-EVERS-PERFORMANCE.jpg' alt="" />
     </span>
-    <Fade left big>
+    <Fade>
       <div className="content dark-bg">
         <header>
           <h2>Poi Artist</h2>
@@ -28,7 +28,7 @@ const PoiSum = props => (
       </div>
     </Fade>
     <ScrollLink
-      to="four"
+      to="tea"
       className="goto-next"
       activeClass="active"
       smooth={true}

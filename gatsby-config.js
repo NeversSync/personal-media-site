@@ -1,9 +1,9 @@
 module.exports = {
   //pathPrefix: `/mygatsby`,
   siteMetadata: {
-    title: 'Nicky Evers Media',
-    author: 'Nicky Evers',
-    description: 'Nicky Evers Personal Site',
+    title: 'Nicky Evers Personal Website',
+    author: 'Nicky Evers Design',
+    description: 'Nicky Evers Personal Website',
     menuLinks: [
       {
         name: 'Home',

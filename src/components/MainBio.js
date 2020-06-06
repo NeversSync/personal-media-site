@@ -1,18 +1,17 @@
 import React from 'react'
-import pic02 from '../assets/images/pic02.jpg'
 import { Link as ScrollLink } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
 
 const MainBio = props => (
   <section
     id="main-bio"
-    className="spotlight style1 bottom inactive dark-bg"
+    className="spotlight style1 bottom inactive dark-bg main-bio"
     style={{ backgroundImage: `url(https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591231024/personal-site/nick-west-88439-unsplash.jpg` }}
   >
-    <span className="image fit main">
+    {/* <span className="image fit main">
       <img src='https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591231024/personal-site/nick-west-88439-unsplash.jpg' alt="" />
-    </span>
-    <Fade bottom big>
+    </span> */}
+    <Fade>
       <div className="content mainbio">
         <div className="container">
           <div className="row">
@@ -50,7 +49,7 @@ const MainBio = props => (
       </div>
     </Fade>
     <ScrollLink
-      to="two"
+      to="dj-nevers"
       className="goto-next"
       activeClass="active"
       smooth={true}

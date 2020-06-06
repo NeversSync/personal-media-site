@@ -1,19 +1,22 @@
 import React from 'react'
-// import pic01 from '../assets/images/pic01.jpg'
 import { Link as ScrollLink } from 'react-scroll'
+import Fade from 'react-reveal';
 
 const Banner = props => (
   <section id="banner">
     <div className="content">
+      {/* <Fade top duration={40000}> */}
       <header className="dark-bg">
+      <Fade top>
         <h2>Nicky Evers</h2>
-        <h3>
-        Creative, mover, friend
-        </h3>
+      </Fade>
+      <Fade bottom>
+        <h3>Creative | Developer |  Mover</h3>
+      </Fade>
       </header>
     </div>
     <ScrollLink
-      to="one"
+      to="main-bio"
       className="goto-next banner-goto"
       activeClass="active"
       smooth={true}

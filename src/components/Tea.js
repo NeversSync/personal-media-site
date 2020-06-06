@@ -1,18 +1,17 @@
 import React from 'react'
-import pic03 from '../assets/images/pic03.jpg'
 import { Link as ScrollLink } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
 
 const Tea = props => (
   <section
     id="tea two"
-    className="spotlight style2 right inactive"
+    className="spotlight style2 right inactive tea"
     style={{ backgroundImage: `url(https://res.cloudinary.com/nicky-cloudinary/image/upload/v1559350545/steady-hand-tea/IMG_7239.jpg` }}
   >
     <span className="image fit main">
       <img src='https://res.cloudinary.com/nicky-cloudinary/image/upload/v1559350545/steady-hand-tea/IMG_7239.jpg' alt="" />
     </span>
-    <Fade right big>
+    <Fade>
       <div className="content dark-bg">
         <header>
           <h2>Artisan Chinese Tea</h2>
@@ -33,7 +32,7 @@ const Tea = props => (
       </div>
     </Fade>
     <ScrollLink
-      to="three"
+      to="web-design-sum"
       className="goto-next"
       activeClass="active"
       smooth={true}

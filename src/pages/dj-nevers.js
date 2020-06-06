@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import djNeversJSON from '../assets/content/dj-nevers.json'
 import { Link } from 'gatsby'
+import Fade from 'react-reveal';
 
 const DjNevers = props => (
   <Layout>
@@ -17,7 +18,7 @@ const DjNevers = props => (
           <a className="image fit">
             <img src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1590876444/personal-site/Dj_nevers_playing_at_BCC.jpg" alt="" />
           </a>
-
+          <Fade >
           <header className="major custom-page-header">
             <div className="header-title">
               <ul className="icons">
@@ -46,45 +47,50 @@ const DjNevers = props => (
               <Link to="/contact">Contact me</Link> if you are interested in booking me to play at your event.
             </p>
           </header>
+          </Fade>
             <div className="youtube-container">
-          <div className="youtube-video-wrapper">
-            <iframe
-              className='youtube-iframe'
-              width='560'
-              height='315'
-              src='https://www.youtube.com/embed/TycWtRxtqWE'
-              frameBorder='0'
-              allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-              allowFullScreen
-              title='music video'
-            />
-          </div>
-          <div className="youtube-video-wrapper">
-            <iframe
-              className='youtube-iframe'
-              width='560'
-              height='315'
-              src='https://www.youtube.com/embed/HJmq-poJhD8'
-              frameBorder='0'
-              allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-              allowFullScreen
-              title='music video'
-            />
+          <Fade bottom cascade>
+              <div className="youtube-video-wrapper">
+                <iframe
+                  className='youtube-iframe'
+                  width='560'
+                  height='315'
+                  src='https://www.youtube.com/embed/TycWtRxtqWE'
+                  frameBorder='0'
+                  allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                  allowFullScreen
+                  title='music video'
+                />
+              </div>
+              <div className="youtube-video-wrapper">
+                <iframe
+                  className='youtube-iframe'
+                  width='560'
+                  height='315'
+                  src='https://www.youtube.com/embed/HJmq-poJhD8'
+                  frameBorder='0'
+                  allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                  allowFullScreen
+                  title='music video'
+                />
+              </div>
+          </Fade>
             </div>
-          </div>
           <div className="soundcloud-wrapper">
-            {
-              djNeversJSON.content.map((data, index) => {
-                console.log(data);
-                return <div className="soundcloud-player" key={`set_num_${index}`}><iframe width="100%"
-                  height="100%"
-                  scrolling="no"
-                  frameBorder="no"
-                  title="soundcloud mix"
-                  src={`${data.set}`} />
-                </div>
-              })
-            }
+            <Fade bottom cascade>
+              {
+                djNeversJSON.content.map((data, index) => {
+                  console.log(data);
+                  return <div className="soundcloud-player" key={`set_num_${index}`}><iframe width="100%"
+                    height="100%"
+                    scrolling="no"
+                    frameBorder="no"
+                    title="soundcloud mix"
+                    src={`${data.set}`} />
+                  </div>
+                })
+              }
+            </Fade>
           </div>
         </section>
       </div>

@@ -17,8 +17,8 @@ class Home extends React.Component {
           htmlAttributes={{ lang: 'en' }}
           title="Nicky Evers"
           meta={[
-            { name: 'description', content: 'Nicky Evers media' },
-            { name: 'keywords', content: 'nicky evers, dj nevers, artist, media, neversmedia' },
+            { name: 'description', content: 'Nicky Evers Personal Website' },
+            { name: 'keywords', content: 'nicky evers, dj nevers, artist, media, poi spinning, neversmedia' },
           ]}
         ></Helmet>
         <Banner />

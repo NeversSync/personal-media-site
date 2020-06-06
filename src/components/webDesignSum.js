@@ -5,13 +5,13 @@ import Fade from 'react-reveal/Fade'
 const WebDesignSum = props => (
   <section
     id="web-sum three"
-    className="spotlight style3 left inactive"
+    className="spotlight style3 left inactive web-design-sum"
     style={{ backgroundImage: `url(https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591230111/personal-site/wireframe.jpg)` }}
   >
     <span className="image fit main bottom">
       <img src='https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591230111/personal-site/wireframe.jpg' alt="" />
     </span>
-    <Fade left big>
+    <Fade >
       <div className="content dark-bg">
         <header>
           <h2>Web Development & Design</h2>
@@ -25,7 +25,7 @@ const WebDesignSum = props => (
       </div>
     </Fade>
     <ScrollLink
-      to="four"
+      to="contact"
       className="goto-next"
       activeClass="active"
       smooth={true}

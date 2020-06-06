@@ -522,6 +522,7 @@
 					grid-template-columns: 1fr 1fr 1fr;
 					margin-bottom: 1em;
 				}
+
 				.icons-wrapper {
 						display: grid;
 						grid-auto-flow: column;
@@ -896,9 +897,10 @@
 	}
 
 	ul {
-		list-style: disc;
+		list-style: circle;
 		margin: 0 0 _size(element-margin) 0;
 		padding-left: 1em;
+		text-align: left;
 
 		li {
 			padding-left: 0.5em;
@@ -1097,8 +1099,6 @@
 		}
 
 		&.primary {
-			// background-color: _palette(accent1);
-			// background-image: linear-gradient(200deg, _palette(fg-lighter), _palette(accent2));
 			background-image: linear-gradient(200deg, _palette(accent1), _palette(accent2));
 			box-shadow: 0px 5px 15px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 			color: _palette(fg) !important;
@@ -1171,7 +1171,7 @@
 		position: relative;
 
 		&#main-bio {
-			height: 100vh;
+			min-height: 100vh;
 		}
 		// Force spotlights to stack in reverse order (needed for our box
 		// shadows to overlap stuff in the right direction).
@@ -1278,9 +1278,24 @@
 		}
 
 		&.style1 {
+
 			.content {
 				border-color: _palette(accent1);
+
 			}
+					.mainbio {
+						border: none;
+						&:before {
+							background: linear-gradient(200deg, _palette(accent1), _palette(accent2));
+							content: '';
+							position: absolute;
+							top: 0;
+							left: 0;
+							height: 0.3em;
+							z-index: 99999;
+							width: 100%;
+						}
+					}
 		}
 
 		&.style2 {
@@ -1595,7 +1610,6 @@
 
 	#banner {
 		background-attachment: fixed;
-		// background-color: _palette(bg-dark);
 		background-image: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/v1590985445/personal-site/foggy-forest-portfolio-landing.jpg');
 		background-position: center center;
 		background-size: cover;
@@ -1680,6 +1694,7 @@
 		background: _palette(bg-dark);
 		padding: $size-wrapper-pad-tb 0;
 		text-align: center;
+
 
 		.copyright {
 			color: _palette(fg-light);
@@ -1986,10 +2001,13 @@
 
 			#banner {
 				box-shadow: 0 0.125em 0.5em 0 rgba(0,0,0,0.25);
-				min-height: calc(100vh - 44px);
+				// min-height: calc(100vh - 44px);
+				min-height: 100vh;
+				margin-top: -44px;
 
 				&:before {
-					height: calc(100vh - 44px);
+					height: 100vh;
+					// height: calc(100vh - 44px);
 				}
 
 				.content {
@@ -2027,12 +2045,15 @@
 				top: 0;
 				width: 100%;
 				z-index: _misc(z-index-base) + 1;
-				background: _palette(accent2);
-				box-shadow: 0 0.125em 0.125em 0 rgba(0,0,0,0.125);
+				background: _palette(bg-semi-transparent);
+				// background: _palette(border-bg);
+				// background: none;
+				// box-shadow: 0 0.125em 0.125em 0 rgba(0,0,0,0.125);
+				box-shadow: none;
 
 				.title {
 					color: _palette(fg);
-					display: block;
+					display: none;
 					font-weight: _font(weight-bold);
 					height: 44px;
 					line-height: 44px;
@@ -2055,8 +2076,9 @@
 					border: 0;
 
 					&:before {
-						background: _palette(accent1);
-						color: _palette(fg-light);
+						// background: _palette(accent1);
+						// color: _palette(fg-light);
+						color: _palette(fg);
 						content: '\f0c9';
 						display: block;
 						font-size: 18px;
@@ -2083,7 +2105,8 @@
 				top: 0;
 				width: _size(navPanel);
 				z-index: _misc(z-index-base) + 2;
-				background: darken(_palette(bg), 2);
+				// background: darken(_palette(bg), 2);
+				background: _palette(accent2-transparent);
 				padding: 0.75em 1.25em;
 
 				.link {
@@ -2096,7 +2119,7 @@
 					text-decoration: none;
 
 					&:hover {
-						color: inherit !important;
+						// color: inherit !important;
 					}
 
 					&:first-child {
@@ -2104,7 +2127,8 @@
 					}
 
 					&.depth-0 {
-						color: _palette(fg-dark);
+						// color: _palette(fg-dark);
+						color: _palette(fg);
 						font-weight: _font(weight-bold);
 					}
 

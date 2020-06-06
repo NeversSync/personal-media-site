@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Link from 'gatsby-link';
+import Fade from 'react-reveal';
 
 const Poi = props => (
   <Layout>
@@ -13,6 +14,7 @@ const Poi = props => (
     <div id="main" className="wrapper style1 poi">
       <div className="container">
         <section id="content">
+          <Fade>
           <header className="major custom-page-header" style={{ marginTop: '0px' }}>
             <a className="image fit">
               <img src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591224983/personal-site/NICKY-EVERS-PERFORMANCE.jpg" alt="" />
@@ -53,8 +55,9 @@ const Poi = props => (
               </ul>
               </div>
           </header>
-
+          </Fade>
           <div className="youtube-container">
+          <Fade bottom cascade>
             <div className="youtube-video-wrapper no-margin-bottom">
               <iframe
                 className='youtube-iframe'
@@ -103,6 +106,7 @@ const Poi = props => (
                 title='music video'
               />
             </div>
+            </Fade>
           </div>
           <div className="testimonials custom-page-section">
           <h3>Testimonials</h3>

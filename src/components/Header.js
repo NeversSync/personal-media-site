@@ -118,18 +118,23 @@ class Header extends React.Component {
               </a>
             </li>
             <li>
+              <a href="https://www.instagram.com/neverspinpoi/" className="icon brands alt fa-instagram" target="_blank">
+                <span className="label">DJ Nevers instagram</span>
+              </a>
+            </li>
+            <li>
               <a href="https://www.youtube.com/user/dharmamystic" className="icon brands alt fa-youtube" target="_blank">
                 <span className="label">Youtube</span>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/nicky-evers/" className="icon brands alt fa-linkedin-in" target="_blank">
-                <span className="label">LinkedIn</span>
+              <a href="https://soundcloud.com/djnevers" className="icon brands alt fa-soundcloud" target="_blank">
+                <span className="label">Soundcloud</span>
               </a>
             </li>
             <li>
-              <a href="https://soundcloud.com/djnevers" className="icon brands alt fa-soundcloud" target="_blank">
-                <span className="label">Soundcloud</span>
+              <a href="https://www.linkedin.com/in/nicky-evers/" className="icon brands alt fa-linkedin-in" target="_blank">
+                <span className="label">LinkedIn</span>
               </a>
             </li>
           </ul>
