@@ -7,7 +7,7 @@ const Contact = props => (
       <div className="container dark-bg">
         <header>
           <h2>Contact</h2>
-          <p>Drop me a line and I'll respond as soon as I can</p>
+          <p>Drop me a line and I'll respond<br/> as soon as I can</p>
         </header>
           <form method="post" action="#">
             <div className="row gtr-uniform gtr-50">

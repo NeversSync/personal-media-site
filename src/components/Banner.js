@@ -5,7 +5,6 @@ import Fade from 'react-reveal';
 const Banner = props => (
   <section id="banner">
     <div className="content">
-      {/* <Fade top duration={40000}> */}
       <header className="dark-bg">
       <Fade top>
         <h2>Nicky Evers</h2>

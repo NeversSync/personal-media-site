@@ -1,4 +1,6 @@
+@import 'libs/vendor';
 /* Custom scss added on top of starter */
+
 // BASIC
 .custom-page-section {
   text-align: left;
@@ -90,18 +92,45 @@
     margin-bottom: 1.5em;
   }
 
-    .youtube-video-wrapper {
-      margin-bottom: 1em;
+  .youtube-video-wrapper {
+    margin-bottom: 1em;
+  }
+
+  header.major.custom-page-header, .custom-page-section {
+    width: 90%;
+    margin: 2em auto;
+
+    .header-title {
+      grid-template-columns: auto 1fr auto;
     }
 
-    header.major.custom-page-header, .custom-page-section {
+    .icons {
+      margin: .5em;
+      padding: 0px;
+      width: 50px;
+    }
+  }
+
+  section.wrapper.style2.style2.contact .row {
       width: 90%;
-      margin: 2em auto;
+  }
+
+  .spotlight.right, .spotlight.left {
+    background-image: none!important;
+
+    .react-reveal.content {
+      @include vendor('transition', 'transform 3s ease, opacity 1s ease');
+      animation-duration: 500ms!important;
+      // animation: none!important;
+      // opacity: 1!important;
     }
 
-    section.wrapper.style2.style2.contact .row {
-        width: 90%;
-    }
+  }
+
+  .spotlight.inactive.bottom .content {
+    transform: none;
+}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -110,3 +139,4 @@
   }
 }
 
+// animation control on mobile
