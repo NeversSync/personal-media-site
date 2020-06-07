@@ -262,7 +262,7 @@ class Header extends React.Component {
                   <a href="https://steadyhandtea.com" target="_blank">Steady Hand Tea</a>
                 </li>
                 <li>
-                  <a href="https://nickyevers.com" target="_blank">Nicky Evers Design</a>
+                  <a href="https://nickyeversdesign.com" target="_blank">Nicky Evers Design</a>
                 </li>
                 <li>
                   <Link to="/contact">Contact</Link>

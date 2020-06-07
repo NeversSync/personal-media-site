@@ -15,11 +15,11 @@ const WebDesignSum = props => (
       <div className="content dark-bg">
         <header>
           <h2>Web Development & Design</h2>
-          <p>I work as a freelance Web Developer and Designer making websites for businesses and artists. Learn more about my business and see examples of my work on my <a href="http://nickyevers.com/" target="_blank">Nicky Evers Design</a> website.</p>
+          <p>I work as a freelance Web Developer and Designer making websites for businesses and artists. Learn more about my business and see examples of my work on my <a href="http://nickyeversdesign.com/" target="_blank">Nicky Evers Design</a> website.</p>
         </header>
         <ul className="actions">
           <li>
-            <a href="https://nickyevers.com/" target="_blank" className="button primary">Learn More</a>
+            <a href="https://nickyeversdesign.com/" target="_blank" className="button primary">Learn More</a>
           </li>
         </ul>
       </div>

@@ -28,7 +28,7 @@ const MainBio = props => (
             </div>
             <div className="col-4 col-12-medium">
               <p>
-                I work as a freelance Web Developer and Designer, check out my professional portfolio and resume at <a href="https://nickyevers.com/" target="_blank">Nicky Evers Design.</a>
+                I work as a freelance Web Developer and Designer, check out my professional portfolio and resume at <a href="https://nickyeversdesign.com/" target="_blank">Nicky Evers Design.</a>
               </p>
               <p>
                 I have a lifelong romance with music and have been DJ'ing professionally for the last 7 years as DJ Nevers. Listen to my live <a href="">DJ Nevers sets</a> and learn more about my role as a DJ for Noteworthy DJs.
