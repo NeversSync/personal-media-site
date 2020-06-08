@@ -1803,7 +1803,9 @@
 	}
 
 /* Medium */
-
+#navPanel, #titleBar {
+	display: none;
+}
 	@include breakpoint('<=medium') {
 
 		$size-wrapper-pad-tb: 4.5em;
@@ -1879,6 +1881,13 @@
 
 			#banner {
 				background-attachment: scroll;
+				box-shadow: 0 0.125em 0.5em 0 rgba(0,0,0,0.25);
+				min-height: 100vh;
+				margin-top: -44px;
+
+				&:before {
+					height: 100vh;
+				}
 
 				.goto-next {
 					height: 7em;
@@ -1906,133 +1915,10 @@
 				padding: $size-wrapper-pad-tb 0;
 			}
 
-	}
-
-/* Small */
-
-	#navPanel, #titleBar {
-		display: none;
-	}
-
-	@include breakpoint('<=small') {
-
-		$size-wrapper-pad-tb: 3.25em;
-		$size-wrapper-pad-lr: 1.5em;
-
-		/* Basic */
-
-			html, body {
-				overflow-x: hidden;
-			}
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-			h2 {
-				font-size: 1.5em;
-			}
-
-			h3 {
-				font-size: 1.2em;
-			}
-
-			h4 {
-				font-size: 1em;
-			}
-
-		/* Section/Article */
-
-			header {
-				p {
-					br {
-						display: none;
-					}
-				}
-
-				h2 + p {
-					font-size: 1em;
-				}
-
-				h3 + p {
-					font-size: 1em;
-				}
-
-				h4 + p,
-				h5 + p,
-				h6 + p {
-					font-size: 0.9em;
-				}
-
-				&.major {
-					margin: 0 0 _size(element-margin) 0;
-				}
-			}
-
-		/* Goto Next */
-
-			.goto-next {
-				&:before {
-					height: 0.8em;
-					margin: -0.4em 0 0 -0.6em;
-					width: 1.2em;
-				}
-			}
-
-		/* Spotlight */
-
-			.spotlight {
-				box-shadow: 0 0.125em 0.5em 0 rgba(0,0,0,0.25);
-
-				.image.main {
-					max-height: 60vh;
-				}
-
-				.content {
-					border-top-width: 0.2em !important;
-					padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr !important;
-				}
-			}
-
-		/* Wrapper */
-
-			.wrapper {
-				padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr;
-			}
-
 		/* Header */
 
 			#header {
 				display: none;
-			}
-
-		/* Banner */
-
-			#banner {
-				box-shadow: 0 0.125em 0.5em 0 rgba(0,0,0,0.25);
-				// min-height: calc(100vh - 44px);
-				min-height: 100vh;
-				margin-top: -44px;
-
-				&:before {
-					height: 100vh;
-					// height: calc(100vh - 44px);
-				}
-
-				.content {
-					padding: ($size-wrapper-pad-tb * 1.25) $size-wrapper-pad-lr ($size-wrapper-pad-tb * 1.5) $size-wrapper-pad-lr;
-
-					header {
-						h2 {
-							font-size: 1.5em;
-						}
-					}
-
-					.image {
-						height: 9em;
-						width: 9em;
-					}
-				}
 			}
 
 		/* Nav */
@@ -2157,6 +2043,128 @@
 						@include vendor('transform', 'translateX(0)');
 					}
 				}
+
+
+
+	}
+
+/* Small */
+
+
+
+	@include breakpoint('<=small') {
+
+		$size-wrapper-pad-tb: 3.25em;
+		$size-wrapper-pad-lr: 1.5em;
+
+		/* Basic */
+
+			html, body {
+				overflow-x: hidden;
+			}
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+			h2 {
+				font-size: 1.5em;
+			}
+
+			h3 {
+				font-size: 1.2em;
+			}
+
+			h4 {
+				font-size: 1em;
+			}
+
+		/* Section/Article */
+
+			header {
+				p {
+					br {
+						display: none;
+					}
+				}
+
+				h2 + p {
+					font-size: 1em;
+				}
+
+				h3 + p {
+					font-size: 1em;
+				}
+
+				h4 + p,
+				h5 + p,
+				h6 + p {
+					font-size: 0.9em;
+				}
+
+				&.major {
+					margin: 0 0 _size(element-margin) 0;
+				}
+			}
+
+		/* Goto Next */
+
+			.goto-next {
+				&:before {
+					// height: 1.1em;
+					// margin: -0.4em 0 0 -0.6em;
+					// width: 1.5em;
+				}
+			}
+
+		/* Spotlight */
+
+			.spotlight {
+				box-shadow: 0 0.125em 0.5em 0 rgba(0,0,0,0.25);
+
+				.image.main {
+					max-height: 60vh;
+				}
+
+				.content {
+					border-top-width: 0.2em !important;
+					padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr !important;
+				}
+			}
+
+		/* Wrapper */
+
+			.wrapper {
+				padding: $size-wrapper-pad-tb $size-wrapper-pad-lr ($size-wrapper-pad-tb - _size(element-margin)) $size-wrapper-pad-lr;
+			}
+
+		/* Banner */
+
+			#banner {
+				box-shadow: 0 0.125em 0.5em 0 rgba(0,0,0,0.25);
+				min-height: 100vh;
+				margin-top: -44px;
+
+				&:before {
+					height: 100vh;
+				}
+
+				.content {
+					padding: ($size-wrapper-pad-tb * 1.25) $size-wrapper-pad-lr ($size-wrapper-pad-tb * 1.5) $size-wrapper-pad-lr;
+
+					header {
+						h2 {
+							font-size: 1.5em;
+						}
+					}
+
+					.image {
+						height: 9em;
+						width: 9em;
+					}
+				}
+			}
+
 
 		/* Footer */
 
