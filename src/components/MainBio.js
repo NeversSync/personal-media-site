@@ -28,7 +28,7 @@ const MainBio = props => (
             </div>
             <div className="col-4 col-12-medium">
               <p>
-                I work as a freelance Web Developer and Designer, check out my professional portfolio and resume at <a href="https://nickyeversdesign.com/" target="_blank">Nicky Evers Design.</a>
+                I work as a freelance Web Developer and Designer, check out my professional portfolio and resume at <a href="https://nickyeversdesign.com/" target="_blank" rel="noreferrer">Nicky Evers Design.</a>
               </p>
               <p>
                 I have a lifelong romance with music and have been DJ'ing professionally for the last 7 years as DJ Nevers. Listen to my live <a href="">DJ Nevers sets</a> and learn more about my role as a DJ for Noteworthy DJs.
@@ -38,7 +38,7 @@ const MainBio = props => (
             </div>
             <div className="col-4 col-12-medium">
               <p>
-                I've done work in the past as a professional videographer and photographer and independently produced a documentary <a href="http://www.flowartsafilm.com/" target="_blank">Flow Arts • A Film.</a></p>
+                I've done work in the past as a professional videographer and photographer and independently produced a documentary <a href="http://www.flowartsafilm.com/" target="_blank" rel="noreferrer">Flow Arts • A Film.</a></p>
                 <p>I'm currently based out of Portland, OR in the fern covered Pacific Northwest.</p>
                 <p>
                 <a href="/contact">Contact me</a> if you want to book me to play music, teach movement arts, perform at your event or need help with a web project.

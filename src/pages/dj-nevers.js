@@ -23,7 +23,7 @@ const DjNevers = props => (
             <div className="header-title">
               <ul className="icons">
                 <li>
-                  <a href="https://soundcloud.com/djnevers" className="icon brands alt fa-soundcloud" target="_blank">
+                  <a href="https://soundcloud.com/djnevers" className="icon brands alt fa-soundcloud" target="_blank" rel="noreferrer">
                     <span className="label">Soundcloud</span>
                   </a>
                 </li>
@@ -31,7 +31,7 @@ const DjNevers = props => (
               <h2>DJ Nevers</h2>
               <ul className="icons">
                 <li>
-                  <a href="https://www.facebook.com/djneversmusic/" className="icon brands alt fa-facebook-f" target="_blank">
+                  <a href="https://www.facebook.com/djneversmusic/" className="icon brands alt fa-facebook-f" target="_blank" rel="noreferrer">
                     <span className="label">DJ Nevers Facebook</span>
                   </a>
                 </li>
@@ -41,8 +41,7 @@ const DjNevers = props => (
             <p>I've been playing music at Flow Arts and dance events across North America under the name DJ Nevers for the past 8 years.</p>
             <p>
               Here you can find my most recent mixes available for listening and download.
-              Follow me on Facebook and
-              Soundcloud to stay in touch.</p>
+              Follow me on <a href="https://www.facebook.com/djneversmusic/" className="link" target="_blank" rel="noreferrer">Facebook</a> and <a href="https://soundcloud.com/djnevers" className="link" target="_blank" rel="noreferrer">Soundcloud</a> to stay in touch.</p>
             <p>
               <Link to="/contact">Contact me</Link> if you are interested in booking me to play at your event.
             </p>

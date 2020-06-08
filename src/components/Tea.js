@@ -15,7 +15,7 @@ const Tea = props => (
       <div className="content dark-bg">
         <header>
           <h2>Artisan Chinese Tea</h2>
-          <p>I founded a tea business named <a href="https://www.steadyhandtea.com/" target="_blank">Steady Hand Tea</a> which provides:</p>
+          <p>I founded a tea business named <a href="https://www.steadyhandtea.com/" target="_blank" rel="noreferrer">Steady Hand Tea</a> which provides:</p>
           <ul>
             <li>Quality tea content</li>
             <li>Education, photography, and events</li>
@@ -24,7 +24,7 @@ const Tea = props => (
         </header>
         <ul className="actions">
           <li>
-            <a href="https://www.steadyhandtea.com/" target="_blank" className="button primary">
+            <a href="https://www.steadyhandtea.com/" target="_blank" rel="noreferrer" className="button primary">
               Learn More
             </a>
           </li>

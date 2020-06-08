@@ -16,7 +16,7 @@ const PoiSum = props => (
       <div className="content dark-bg">
         <header>
           <h2>Poi Artist</h2>
-          <p>I've had a life long love of movement arts and have focused the most on an art form named poi spinning. I have travelled internationally teaching and performing with poi and am passionate about sharing poi and other <a href="http://flowartsafilm.com/" target="_blank">Flow Arts</a> with the world</p>
+          <p>I've had a life long love of movement arts and have focused the most on an art form named poi spinning. I have travelled internationally teaching and performing with poi and am passionate about sharing poi and other <a href="http://flowartsafilm.com/" target="_blank" rel="noreferrer">Flow Arts</a> with the world</p>
         </header>
         <ul className="actions">
           <li>

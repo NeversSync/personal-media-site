@@ -33,10 +33,7 @@ export default Home
 
 // TODO:
 // Ensure form works - netlify?
-// Enlarge arrow on mobile
-// Ensure tablet menu layout is ok
 // Fix flashing animation on mobile
-// rel="noreferrer" to all external links
 // Fix performance issues
   // - replace cloudinary links - use gatsby cloudinary plugin
   // - add script for youtube embeds

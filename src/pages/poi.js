@@ -23,32 +23,32 @@ const Poi = props => (
               <h2>Poi Artist</h2>
             </div>
             <p>
-              I've been travelling to teach and perform movement arts and <a href="https://flowartsinstitute.com/discoveries-poi/" className="link" target="_blank">Poi dance</a> internationally for the past 10 years. I've worked to create a unique style heavily influenced by my time obtaining a BA in T'ai Chi at Naropa University.
+              I've been travelling to teach and perform movement arts and <a href="https://flowartsinstitute.com/discoveries-poi/" className="link" target="_blank" rel="noreferrer">Poi dance</a> internationally for the past 10 years. I've worked to create a unique style heavily influenced by my time obtaining a BA in T'ai Chi at Naropa University.
                 </p>
             <p>
               I regularly teach and perform dancing with Poi and am also available for private and group lessons both in person and online. <Link to="/contact">Contact me</Link> if you are interested.</p>
             <p>
               Below is a selection of past performances and videos.<br/>
-                You can see more on my <a href="https://www.facebook.com/neverspoi/" className="link" target="_blank">Facebook</a>, <a href="https://www.instagram.com/neverspinpoi/" className="link" target="_blank">Instagram</a>, and <a href="https://www.youtube.com/user/dharmamystic/" className="link" target="_blank">Youtube accounts</a>.
+                You can see more on my <a href="https://www.facebook.com/neverspoi/" className="link" target="_blank" rel="noreferrer">Facebook</a>, <a href="https://www.instagram.com/neverspinpoi/" className="link" target="_blank" rel="noreferrer">Instagram</a>, and <a href="https://www.youtube.com/user/dharmamystic/" className="link" target="_blank" rel="noreferrer">Youtube accounts</a>.
                 </p>
                 <div className="icons-wrapper">
               <ul className="icons">
                 <li>
-                  <a href="https://www.facebook.com/neverspoi/" className="icon brands alt fa-facebook-f" target="_blank">
+                  <a href="https://www.facebook.com/neverspoi/" className="icon brands alt fa-facebook-f" target="_blank" rel="noreferrer">
                     <span className="label">DJ Nevers Facebook</span>
                   </a>
                 </li>
                 </ul>
                 <ul className="icons">
                 <li>
-                  <a href="https://www.facebook.com/neverspoi/" className="icon brands alt fa-instagram" target="_blank">
+                  <a href="https://www.facebook.com/neverspoi/" className="icon brands alt fa-instagram" target="_blank" rel="noreferrer">
                     <span className="label">DJ Nevers Instagram</span>
                   </a>
                 </li>
                 </ul>
                 <ul className="icons">
                 <li>
-                  <a href="https://www.youtube.com/user/dharmamystic" className="icon brands alt fa-youtube" target="_blank">
+                  <a href="https://www.youtube.com/user/dharmamystic" className="icon brands alt fa-youtube" target="_blank" rel="noreferrer">
                     <span className="label">Soundcloud</span>
                   </a>
                 </li>

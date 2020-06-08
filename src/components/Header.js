@@ -113,27 +113,27 @@ class Header extends React.Component {
         <header id="header">
           <ul className="icons">
             <li>
-              <a href="https://www.facebook.com/djneversmusic/" className="icon brands alt fa-facebook-f" target="_blank">
+              <a href="https://www.facebook.com/djneversmusic/" className="icon brands alt fa-facebook-f" target="_blank" rel="noreferrer">
                 <span className="label">DJ Nevers Facebook</span>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/neverspinpoi/" className="icon brands alt fa-instagram" target="_blank">
+              <a href="https://www.instagram.com/neverspinpoi/" className="icon brands alt fa-instagram" target="_blank" rel="noreferrer">
                 <span className="label">DJ Nevers instagram</span>
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/user/dharmamystic" className="icon brands alt fa-youtube" target="_blank">
+              <a href="https://www.youtube.com/user/dharmamystic" className="icon brands alt fa-youtube" target="_blank" rel="noreferrer">
                 <span className="label">Youtube</span>
               </a>
             </li>
             <li>
-              <a href="https://soundcloud.com/djnevers" className="icon brands alt fa-soundcloud" target="_blank">
+              <a href="https://soundcloud.com/djnevers" className="icon brands alt fa-soundcloud" target="_blank" rel="noreferrer">
                 <span className="label">Soundcloud</span>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/nicky-evers/" className="icon brands alt fa-linkedin-in" target="_blank">
+              <a href="https://www.linkedin.com/in/nicky-evers/" className="icon brands alt fa-linkedin-in" target="_blank" rel="noreferrer">
                 <span className="label">LinkedIn</span>
               </a>
             </li>
@@ -259,10 +259,10 @@ class Header extends React.Component {
                     )
                 )}
                 <li>
-                  <a href="https://steadyhandtea.com" target="_blank">Steady Hand Tea</a>
+                  <a href="https://steadyhandtea.com" target="_blank" rel="noreferrer">Steady Hand Tea</a>
                 </li>
                 <li>
-                  <a href="https://nickyeversdesign.com" target="_blank">Nicky Evers Design</a>
+                  <a href="https://nickyeversdesign.com" target="_blank" rel="noreferrer">Nicky Evers Design</a>
                 </li>
                 <li>
                   <Link to="/contact">Contact</Link>
