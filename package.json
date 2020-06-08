@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-landed-v2",
-  "description": "Gatsby Starter - Landed V2",
+  "name": "Nicky Evers Personal Site",
+  "description": "Nicky Evers Personal Site",
   "version": "1.0.0",
-  "author": "Vasilis Gakis",
+  "author": "Nicky Evers Design",
   "dependencies": {
     "gatsby": "^2.18.1",
     "gatsby-image": "^2.2.33",
