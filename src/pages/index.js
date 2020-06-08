@@ -32,8 +32,6 @@ class Home extends React.Component {
 export default Home
 
 // TODO:
-// Ensure form works - netlify?
-// Fix flashing animation on mobile
 // Fix performance issues
   // - replace cloudinary links - use gatsby cloudinary plugin
   // - add script for youtube embeds
