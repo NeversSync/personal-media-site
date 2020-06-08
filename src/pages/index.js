@@ -16,10 +16,6 @@ class Home extends React.Component {
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           title="Nicky Evers"
-          meta={[
-            { name: 'description', content: 'Nicky Evers Personal Website' },
-            { name: 'keywords', content: 'nicky evers, dj nevers, artist, media, poi spinning, neversmedia' },
-          ]}
         ></Helmet>
         <Banner />
         <MainBio />
@@ -34,3 +30,13 @@ class Home extends React.Component {
 }
 
 export default Home
+
+// TODO:
+// Ensure form works - netlify?
+// Enlarge arrow on mobile
+// Ensure tablet menu layout is ok
+// Fix performance issues
+  // - replace cloudinary links
+  // - add script for youtube embeds
+  // - add script for soundcloud embeds
+
