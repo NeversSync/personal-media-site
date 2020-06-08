@@ -9,9 +9,12 @@ const Contact = props => (
           <h2>Contact</h2>
           <p>Drop me a line and I'll respond<br/> as soon as I can</p>
         </header>
-          <form method="post" action="#">
+          <form name="contact-form" method="post" data-netlify="true" netlify-honeypot="bot-field">
             <div className="row gtr-uniform gtr-50">
               <div className="col-6 col-12-xsmall">
+              <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </p>
                 <input type="text" name="name" id="name" placeholder="Name" />
               </div>
               <div className="col-6 col-12-xsmall">
