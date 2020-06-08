@@ -10,7 +10,8 @@ const Banner = props => (
         <h2>Nicky Evers</h2>
       </Fade>
       <Fade bottom>
-        <h3>Creative | Developer |  Mover</h3>
+        {/* <h3>Creative | Developer |  Mover</h3> */}
+        <h3>Music | Movement | Design | Development | Tea</h3>
       </Fade>
       </header>
     </div>

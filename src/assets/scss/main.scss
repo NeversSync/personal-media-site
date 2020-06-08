@@ -2127,16 +2127,11 @@
 					line-height: 3em;
 					text-decoration: none;
 
-					&:hover {
-						// color: inherit !important;
-					}
-
 					&:first-child {
 						border-top: 0;
 					}
 
 					&.depth-0 {
-						// color: _palette(fg-dark);
 						color: _palette(fg);
 						font-weight: _font(weight-bold);
 					}
