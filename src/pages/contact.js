@@ -11,11 +11,6 @@ const contact = props => (
       <meta name="description" content="Contact Nicky Evers" />
     </Helmet>
         <Contact/>
-
-    {/* <div id="main" className="wrapper style1">
-      <div className="container">
-      </div>
-    </div> */}
   </Layout>
 )
 

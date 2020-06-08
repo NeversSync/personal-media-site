@@ -119,10 +119,10 @@
     background-image: none!important;
 
     .react-reveal.content {
-      @include vendor('transition', 'transform 3s ease, opacity 1s ease');
-      animation-duration: 500ms!important;
-      // animation: none!important;
-      // opacity: 1!important;
+      // @include vendor('transition', 'transform 3s ease, opacity 1s ease');
+      // animation-duration: 500ms!important;
+      animation: none!important;
+      opacity: 1!important;
     }
 
   }
