@@ -28,13 +28,13 @@ const Layout = ({ children, ...props }) => (
           title='Nicky Evers'
           meta={[
             { name: 'keywords', content: 'Nicky Evers poi dj nevers design flow arts a film steady hand tea' },
-            { name: 'description', content: 'Nicky Evers. Creative | Developer | Mover' },
+            { name: 'description', content: 'Nicky Evers. Music | Movement | Design | Development | Tea' },
             { name: 'og:image', content: 'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591673223/personal-site/personal-site-screenshot.jpg' },
             { name: 'og:url', content: 'https://www.nickyevers.com/' },
             { name: 'twitter:card', content: 'summary_large_image' },
             { name: 'twitter:url', content: 'https://www.nickyevers.com/' },
             { name: 'twitter:title', content: 'Nicky Evers' },
-            { name: 'twitter:description', content: 'Nicky Evers. Creative | Developer | Mover' },
+            { name: 'twitter:description', content: 'Nicky Evers. Music | Movement | Design | Development | Tea' },
             { name: 'twitter:image', content: 'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591673223/personal-site/personal-site-screenshot.jpg' }
           ]}
         />
