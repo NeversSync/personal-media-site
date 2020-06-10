@@ -39,7 +39,7 @@ const MainBio = props => (
             <div className="col-4 col-12-medium">
               <p>
                 I've done work in the past as a professional videographer and photographer and independently produced a documentary <a href="http://www.flowartsafilm.com/" target="_blank" rel="noreferrer">Flow Arts • A Film.</a></p>
-                <p>I'm currently based out of Portland, OR in the fern covered Pacific Northwest.</p>
+                <p>I'm currently based out of Portland, Oregon in the fern-covered Pacific Northwest.</p>
                 <p>
                 <a href="/contact">Contact me</a> if you want to book me to play music, teach movement arts, perform at your event or need help with a web project.
               </p>
