@@ -32,7 +32,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build",
+    "build": "echo SITE_RECAPTCHA_KEY=6LcMOaUZAAAAAO7kbjxi2IEv0gvxSQzE0u03TT-q >> .env.production && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "clean": "gatsby clean",
