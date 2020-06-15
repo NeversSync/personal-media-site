@@ -7,6 +7,10 @@
   display: none;
 }
 
+.no-left-padding {
+  padding-left: 0px!important;
+}
+
 .custom-page-section {
   text-align: left;
   width: 60%;
@@ -87,6 +91,8 @@
   }
 
 
+
+
   // MEDIA QUERIES
 @media screen and (max-width: 980px) {
 
@@ -147,5 +153,3 @@
     padding: 0 0 0 0;
   }
 }
-
-// animation control on mobile

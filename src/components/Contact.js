@@ -1,6 +1,11 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Fade from 'react-reveal';
+import Recaptcha from "react-google-recaptcha";
+
+const recaptchaRef = React.createRef();
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
+
 
 function encode(data) {
   return Object.keys(data)
@@ -14,6 +19,11 @@ export default function Contact() {
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
+
+  const handleRecaptcha = value => {
+    this.setState({ "g-recaptcha-response": value });
+  };
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -44,10 +54,11 @@ export default function Contact() {
             action="/thanks"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact" />
             <div className="row gtr-uniform gtr-50">
-              <div className="col-6 col-12-xsmall">
+              <div className="col-6 col-12-xsmall no-left-padding">
                 <p hidden>
                   <label>Don’t fill this out if you're human: <input name="bot-field" onChange={handleChange} /></label>
                 </p>
@@ -62,7 +73,7 @@ export default function Contact() {
                   onChange={handleChange}
                 />
               </div>
-              <div className="col-12">
+              <div className="col-12 no-left-padding">
                 <textarea
                   name="message"
                   id="message"
@@ -71,9 +82,15 @@ export default function Contact() {
                   onChange={handleChange}
                 ></textarea>
               </div>
+                <Recaptcha
+                style={{margin: '0 auto', padding: '1em'}}
+                  ref={recaptchaRef}
+                  sitekey={RECAPTCHA_KEY}
+                  onChange={handleRecaptcha}
+                />
               <div className="col-12">
                 <ul className="actions">
-                  <li>
+                  <li className="no-left-padding">
                     <input
                       type="submit"
                       value="Send"
