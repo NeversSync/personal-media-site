@@ -6,7 +6,6 @@ import Recaptcha from "react-google-recaptcha";
 const recaptchaRef = React.createRef();
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
-
 function encode(data) {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
