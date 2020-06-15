@@ -44,6 +44,7 @@ export default function Contact() {
             action="/thanks"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact" />
             <div className="row gtr-uniform gtr-50">
@@ -51,6 +52,7 @@ export default function Contact() {
                 <p hidden>
                   <label>Don’t fill this out if you're human: <input name="bot-field" onChange={handleChange} /></label>
                 </p>
+                <div data-netlify-recaptcha="true"></div>
                 <input type="text" name="name" id="name" placeholder="Name" onChange={handleChange} />
               </div>
               <div className="col-6 col-12-xsmall">
