@@ -38,7 +38,7 @@ const Layout = ({ children, ...props }) => (
             { name: 'twitter:image', content: 'https://res.cloudinary.com/nicky-cloudinary/image/upload/v1591673223/personal-site/personal-site-screenshot.jpg' }
           ]}
         />
-        <div className={props.location == '/' ? 'landing' : ''}>
+        <div className={props.location === '/' ? 'landing' : ''}>
           <div id="page-wrapper">
             <Header
               menuLinks={data.site.siteMetadata.menuLinks}
