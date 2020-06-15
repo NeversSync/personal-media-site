@@ -83,7 +83,7 @@ export default function Contact() {
                 ></textarea>
               </div>
                 <Recaptcha
-                style={{margin: '0 auto', padding: '1em'}}
+                  style={{margin: '0 auto', padding: '1em'}}
                   ref={recaptchaRef}
                   sitekey={RECAPTCHA_KEY}
                   onChange={handleRecaptcha}
