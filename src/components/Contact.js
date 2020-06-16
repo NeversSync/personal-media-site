@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-import Fade from 'react-reveal';
-import ReCAPTCHA from "react-google-recaptcha";
+import Fade from 'react-reveal'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY;
 const recaptchaRef = React.createRef();
