@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Fade from 'react-reveal';
-import Recaptcha from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY;
 const recaptchaRef = React.createRef();
@@ -81,7 +81,7 @@ export default function Contact() {
                   onChange={handleChange}
                 ></textarea>
               </div>
-                <Recaptcha
+                <ReCAPTCHA
                   style={{margin: '0 auto', padding: '1em'}}
                   ref={recaptchaRef}
                   sitekey={RECAPTCHA_KEY}
