@@ -18,7 +18,6 @@ export default function Contact() {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
-
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
@@ -59,7 +58,7 @@ export default function Contact() {
             action="/thanks"
             data-netlify="true"
             // data-netlify-honeypot="bot-field"
-            // data-netlify-recaptcha="true"
+            data-netlify-recaptcha="true"
             onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact" />
             <div className="row gtr-uniform gtr-50">
