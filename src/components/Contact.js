@@ -1,10 +1,9 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Fade from 'react-reveal'
-// import ReCAPTCHA from 'react-google-recaptcha'
+import Recaptcha from 'react-recaptcha'
 
-// const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
-// const recaptchaRef = React.createRef();
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
 function encode(data) {
   return Object.keys(data)
@@ -18,10 +17,6 @@ export default function Contact() {
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
-
-  // const handleRecaptcha = value => {
-  //   this.setState({ "g-recaptcha-response": value });
-  // };
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -38,6 +33,17 @@ export default function Contact() {
       .catch((error) => alert(error))
   }
 
+  // render on captcha load
+  const handleCaptchaLoad = (event) => {
+    console.log('handleCaptchaLoad')
+  }
+
+  // load on callback verify
+  const verifyCallback = (event) => {
+    console.log('verifyCallback-->', event)
+  }
+
+
   return (
     <section id="contact" className="wrapper style2 contact special fade inactive">
       <Fade duration={1500}>
@@ -52,7 +58,7 @@ export default function Contact() {
             action="/thanks"
             data-netlify="true"
             // data-netlify-honeypot="bot-field"
-            // data-netlify-recaptcha="true"
+            data-netlify-recaptcha="true"
             onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact" />
             <div className="row gtr-uniform gtr-50">
@@ -80,12 +86,12 @@ export default function Contact() {
                   onChange={handleChange}
                 ></textarea>
               </div>
-                {/* <ReCAPTCHA
-                  style={{margin: '0 auto', padding: '1em'}}
-                  ref={recaptchaRef}
-                  sitekey={RECAPTCHA_KEY}
-                  onChange={handleRecaptcha}
-                /> */}
+              <Recaptcha
+                sitekey={RECAPTCHA_KEY}
+                render="explicit"
+                verifyCallback={verifyCallback}
+                onloadCallback={handleCaptchaLoad}
+              />
               <div className="col-12">
                 <ul className="actions">
                   <li className="no-left-padding">

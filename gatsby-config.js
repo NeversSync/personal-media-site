@@ -56,6 +56,9 @@ module.exports = {
         head: true
       }
     },
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-recaptcha`,
+    }
   ],
 }
