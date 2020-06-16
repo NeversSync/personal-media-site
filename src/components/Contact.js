@@ -18,20 +18,20 @@ export default function Contact() {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch((error) => alert(error))
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   const form = e.target
+  //   fetch('/', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  //     body: encode({
+  //       'form-name': form.getAttribute('name'),
+  //       ...state,
+  //     }),
+  //   })
+  //     .then(() => navigate(form.getAttribute('action')))
+  //     .catch((error) => alert(error))
+  // }
 
   // render on captcha load
   const handleCaptchaLoad = (event) => {
@@ -59,7 +59,8 @@ export default function Contact() {
             data-netlify="true"
             // data-netlify-honeypot="bot-field"
             data-netlify-recaptcha="true"
-            onSubmit={handleSubmit}>
+            // onSubmit={handleSubmit}
+            >
             <input type="hidden" name="form-name" value="contact" />
             <div className="row gtr-uniform gtr-50">
               <div className="col-6 col-12-xsmall no-left-padding">
