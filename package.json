@@ -12,6 +12,7 @@
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-offline": "^3.0.22",
     "gatsby-plugin-react-helmet": "^3.3.4",
+    "gatsby-plugin-recaptcha": "^1.0.5",
     "gatsby-plugin-sass": "^2.1.23",
     "gatsby-plugin-sharp": "^2.3.2",
     "gatsby-source-filesystem": "^2.1.38",
@@ -19,8 +20,8 @@
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-google-recaptcha": "^2.1.0",
     "react-helmet": "^5.2.1",
+    "react-recaptcha": "^2.3.10",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.7.14"
   },
