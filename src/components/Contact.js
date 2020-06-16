@@ -87,6 +87,7 @@ export default function Contact() {
                   sitekey={RECAPTCHA_KEY}
                   onChange={handleRecaptcha}
                 />
+                {/* <h1>{RECAPTCHA_KEY}</h1> */}
               <div className="col-12">
                 <ul className="actions">
                   <li className="no-left-padding">
