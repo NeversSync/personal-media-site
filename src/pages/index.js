@@ -15,7 +15,7 @@ class Home extends React.Component {
       <Layout location="/">
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          title="Nicky Evers"
+          title="Nico Evers"
         ></Helmet>
         <Banner />
         <MainBio />

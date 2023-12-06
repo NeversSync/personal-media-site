@@ -17,7 +17,7 @@ const MainBio = props => (
           <div className="row">
             <div className="col-4 col-12-medium">
               <header>
-                <h2>Hi, I'm Nicky Evers,</h2>
+                <h2>Hi, I'm Nico Evers,</h2>
                 <p>
                 a passionate and multifaceted artist. Here are some of my projects
                 </p>
@@ -28,7 +28,7 @@ const MainBio = props => (
             </div>
             <div className="col-4 col-12-medium">
               <p>
-                I work as a freelance Web Developer and Designer, check out my professional portfolio and resume at <a href="https://nickyeversdesign.com/" target="_blank" rel="noreferrer">Nicky Evers Design.</a>
+                I work as a freelance Web Developer and Designer, check out my professional portfolio and resume at <a href="https://nickyeversdesign.com/" target="_blank" rel="noreferrer">Nico Evers Design.</a>
               </p>
               <p>
                 I have a lifelong romance with music and have been DJ'ing professionally for the last 7 years as DJ Nevers. Listen to my live <a href="">DJ Nevers sets</a> and learn more about my role as a DJ for Noteworthy DJs.

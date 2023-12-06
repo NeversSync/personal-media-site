@@ -7,7 +7,7 @@ const Banner = props => (
     <div className="content">
       <header className="dark-bg">
       <Fade top>
-        <h2>Nicky Evers</h2>
+        <h2>Nico Evers</h2>
       </Fade>
       <Fade bottom>
         <h3>Music | Movement | Design | Development | Tea</h3>

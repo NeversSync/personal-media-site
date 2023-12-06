@@ -8,7 +8,7 @@ const Poi = props => (
   <Layout>
     <Helmet>
       <title>Poi Artist</title>
-      <meta name="description" content="Nicky Evers Poi Artist" />
+      <meta name="description" content="Nico Evers Poi Artist" />
     </Helmet>
 
     <div id="main" className="wrapper style1 poi">
@@ -110,8 +110,8 @@ const Poi = props => (
           </div>
           <div className="testimonials custom-page-section">
           <h3>Testimonials</h3>
-          <p>"Nicky's teaching style is fantastic. He makes a personal connection with each individual and also connects the class with each other to create a unique learning experience."</p>
-          <p>"Nicky helped me open and unlock greater flow and connection in poi. He is easy going yet focused. Not only is he a master with poi dancing he is also an excellent teacher making the art feel accessible and fun. There is a quality of joy and presence in his teaching style that make learning easy."
+          <p>"Nico's teaching style is fantastic. He makes a personal connection with each individual and also connects the class with each other to create a unique learning experience."</p>
+          <p>"Nico helped me open and unlock greater flow and connection in poi. He is easy going yet focused. Not only is he a master with poi dancing he is also an excellent teacher making the art feel accessible and fun. There is a quality of joy and presence in his teaching style that make learning easy."
           </p>
           </div>
         </section>

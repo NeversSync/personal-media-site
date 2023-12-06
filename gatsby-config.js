@@ -1,9 +1,9 @@
 module.exports = {
   //pathPrefix: `/mygatsby`,
   siteMetadata: {
-    title: 'Nicky Evers Personal Website',
-    author: 'Nicky Evers Design',
-    description: 'Nicky Evers Personal Website',
+    title: 'Nico Evers Personal Website',
+    author: 'Nico Evers Design',
+    description: 'Nico Evers Personal Website',
     menuLinks: [
       {
         name: 'Home',
@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Nicky Evers Personal Site',
-        short_name: 'Nicky Evers Personal Site',
+        name: 'Nico Evers Personal Site',
+        short_name: 'Nico Evers Personal Site',
         start_url: '/',
         background_color: '#eee',
         theme_color: '#5818bf',

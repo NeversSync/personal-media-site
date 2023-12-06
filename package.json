@@ -1,8 +1,8 @@
 {
-  "name": "nicky-evers-personal-site",
-  "description": "Nicky Evers Personal Site",
+  "name": "nico-evers-personal-site",
+  "description": "Nico Evers Personal Site",
   "version": "1.0.0",
-  "author": "Nicky Evers Design",
+  "author": "Nico Evers Design",
   "dependencies": {
     "gatsby": "^2.18.1",
     "gatsby-image": "^2.2.33",

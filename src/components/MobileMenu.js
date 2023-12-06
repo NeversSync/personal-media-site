@@ -59,7 +59,7 @@ const MobileMenu = props => (
         <a href="https://steadyhandtea.com" target="_blank" rel="noreferrer" className="link depth-0">Steady Hand Tea</a>
     </div>
     <div>
-        <a href="https://nickyeversdesign.com" target="_blank" rel="noreferrer" className="link depth-0">Nicky Evers Design</a>
+        <a href="https://nicoeversdesign.com" target="_blank" rel="noreferrer" className="link depth-0">Nico Evers Design</a>
     </div>
     <div>
         <Link to="/contact" className="link depth-0">Contact</Link>

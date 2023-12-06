@@ -30,7 +30,7 @@ const Footer = props => (
             </li>
     </ul>
     <ul className="copyright">
-      <li>&copy; <a href="https://nickyeversdesign.com" target="_blank" rel="noreferrer">Nicky Evers Design</a>. All rights reserved.</li>
+      <li>&copy; <a href="https://nicoeversdesign.com" target="_blank" rel="noreferrer">Nico Evers Design</a>. All rights reserved.</li>
     </ul>
   </footer>
 )

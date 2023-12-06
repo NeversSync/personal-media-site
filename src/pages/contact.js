@@ -8,7 +8,7 @@ const contact = props => (
   <Layout>
     <Helmet>
       <title>Contact</title>
-      <meta name="description" content="Contact Nicky Evers" />
+      <meta name="description" content="Contact Nico Evers" />
     </Helmet>
         <Contact/>
   </Layout>
